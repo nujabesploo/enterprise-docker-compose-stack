@@ -1,0 +1,12 @@
+services:
+
+  nginx:
+    image: nginx
+    container_name: nginx-web
+    ports:
+      - "8081:80"
+
+  alpine:
+    image: alpine
+    container_name: utility-container
+    command: sleep 3600
